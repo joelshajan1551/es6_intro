@@ -1,11 +1,9 @@
-function addressMaker(address) {
-  const { city, state } = address;
-  const newadress = {
-    city,
-    state,
-    country: "united States",
-  };
-  console.log(`${newadress.city}, ${newadress.state}, ${newadress.country}`);
+let fullname = "dani lopes code";
+
+for (const char of fullname) {
+  console.log(char);
 }
 
-addressMaker({ city: "adimali", state: "kerala" });
+// setTimeout(function () {
+// console.log(income);
+//   }, 3000);

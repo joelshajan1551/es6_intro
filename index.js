@@ -1,6 +1,6 @@
-let example1 = {
-  firstName: "Dylan",
-};
-let example2 = {
-  ...example1,
-};
+function add(...nums) {
+  let total = nums.reduce(function(x,y));
+  console.log(total);
+}
+
+add(4, 5, 7, 8, 12);

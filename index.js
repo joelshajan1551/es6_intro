@@ -1,9 +1,6 @@
-let fullname = "dani lopes code";
-
-for (const char of fullname) {
-  console.log(char);
-}
-
-// setTimeout(function () {
-// console.log(income);
-//   }, 3000);
+let example1 = {
+  firstName: "Dylan",
+};
+let example2 = {
+  ...example1,
+};

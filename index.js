@@ -1,6 +1,9 @@
-function add(...nums) {
-  let total = nums.reduce(function(x,y));
+function add(numArray) {
+  let total = 0;
+  numArray.forEach((element) => {
+    total = +element;
+  });
   console.log(total);
 }
 
-add(4, 5, 7, 8, 12);
+add();

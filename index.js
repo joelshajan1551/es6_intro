@@ -1,3 +1,5 @@
-let numArray = [1, 2, 3, 4, 5];
+import { data } from "./example.js";
+let updatedData = data;
 
-console.log(numArray.includes());
+updatedData.push(77);
+console.log(updatedData);

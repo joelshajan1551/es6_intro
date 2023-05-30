@@ -1,11 +1,16 @@
-const apiUrl = "https://fcctop100.herokuapp.com/api/fccusers/top/alltime";
-
-function getTop100Campers() {
-  fetch(apiUrl)
-    .then((r) => r.json())
-    .then((json) => {
-      console.log(json[0]);
-    });
+function resolveafter3seconds() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("resolved");
+    }, 3000);
+  });
 }
+// resolveafter3seconds().then((data) => {
+//   console.log(data);
+// });
 
-getTop100Campers();
+async function getAsyncData() {
+  const result = await resolveafter3seconds();
+  console.log(result);
+}
+getAsyncData();

@@ -1,16 +1,10 @@
-function resolveafter3seconds() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve("resolved");
-    }, 3000);
-  });
-}
-// resolveafter3seconds().then((data) => {
-//   console.log(data);
-// });
+const exampleSet = new Set([1, 1, 1, 2, 2, 2, 2]);
 
-async function getAsyncData() {
-  const result = await resolveafter3seconds();
-  console.log(result);
-}
-getAsyncData();
+exampleSet.add(5);
+exampleSet.add(5).add(17);
+
+console.log(exampleSet.has(5));
+
+exampleSet.clear();
+
+console.log(exampleSet.size);

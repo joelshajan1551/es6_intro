@@ -1,16 +1,11 @@
-// import { Animal, Cat } from "./animal.js";
+const apiUrl = "https://fcctop100.herokuapp.com/api/fccusers/top/alltime";
 
-// let cat = new Cat("cat", 4);
-
-// cat.makenoise();
-
-// console.log(cat.metaData);
-
-function add(param2,) {
-  const example = {
-    name: " Dylan",
-  };
-  console.log(example);
+function getTop100Campers() {
+  fetch(apiUrl)
+    .then((r) => r.json())
+    .then((json) => {
+      console.log(json[0]);
+    });
 }
 
-add();
+getTop100Campers();
